@@ -1,0 +1,93 @@
+name: summerschool_2022 
+channels:
+- conda-forge
+dependencies:
+- pip
+- python>=3.8
+# jupyter book  
+- sphinx
+- jupyter-book
+# jupyter lab  
+- jupyterlab
+# publish book
+- ghp-import
+# cdo
+- cdo
+- python-cdo  
+- conda
+# esgf
+- esgf-pyclient
+# rooki  
+- birdy
+- beautifulsoup4
+- pymetalink
+- owslib
+- pyproj>=3.0.1
+# cds
+- cdsapi
+# xarray 
+- netcdf4>=1.5.7
+- xarray>=0.15,<2022.6.0
+- dask>=2.6.0
+- nc-time-axis
+- xarray-spatial
+- cfgrib
+# cloud
+- zarr
+- intake
+- intake-esm
+- aiohttp
+- s3fs
+- gcsfs
+# stac
+- pystac-client
+- planetary-computer
+- rasterio
+- rioxarray
+- geopy
+- ipywidgets
+- yaml
+- pyyaml
+- psutil
+- dateparser
+- git
+- tqdm
+- folium
+- fsspec
+- icclim>=5.3
+- xclim>=0.37
+- rechunker>=0.3,!=0.4
+- siphon
+- seaborn
+# clisops, xesmf, plotting
+- bottleneck>=1.3.1,<1.4
+- cf_xarray>=0.7.0
+- cftime>=1.4.1
+- geopandas>=0.7
+- loguru>=0.5.3
+- numpy>=1.16,<1.22
+- pandas>=1.3,<1.4
+- poppler>=0.67
+- pygeos>=0.9
+- pooch
+- requests>=2.0
+- roocs-utils>=0.6.2,<0.7
+- shapely>=1.6
+- xesmf>=0.6.3
+- GitPython
+# plot
+- matplotlib>=3.5.2
+- cartopy>=0.20.2
+- hvplot
+- geoviews
+# provenance
+- prov>=2.0.0
+- pydot
+- graphviz
+- pip:
+  - rooki
+  - psy-maps
+  - clisops @ git+https://github.com/roocs/clisops/@regrid-main#egg=clisops
+# - clisops @ git+https://github.com/roocs/clisops/@master#egg=clisops
+#    - cf-xarray @ git+https://github.com/xarray-contrib/cf-xarray/@main#egg=cf-xarray
+#    - roocs-utils @ git+https://github.com/roocs/roocs-utils.git@master#egg=roocs-utils
